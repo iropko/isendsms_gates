@@ -20,14 +20,14 @@
 		<supportunicode>1</supportunicode>
 		<supportcheckdelivery>1</supportcheckdelivery>
 		<captcha>1</captcha>
-		<gateurl>http://www.kyivstar.ua/ru/sms/</gateurl>
+		<gateurl>http://www.kyivstar.ua/kh/sms/</gateurl>
 		<supportautorecognize>0</supportautorecognize>
 	</info>
 	<classprops>
 		<encoding>UTF-8</encoding>
 		<sendinit>eval(begin HTTP.Referer:='http://www.kyivstar.ua'; Result:=true; end;)</sendinit>
-		<pageurl>http://smsgate.kyivstar.ua/sms/?lang=ru</pageurl>
-		<imageurl>eval('http://smsgate.kyivstar.ua/sms/images.jpg?id='+Html.RegExp('background-image: url\(''/sms/images.jpg\?id=(.*?)''',1))</imageurl>
+		<pageurl>http://smsgate.kyivstar.ua/kh/sms/?lang=ru</pageurl>
+		<imageurl>eval('http://smsgate.kyivstar.ua/kh/sms/images.jpg?id='+Html.RegExp('background-image: url\(''/kh/sms/images.jpg\?id=(.*?)''',1))</imageurl>
 		<imagedescription>eval('Выберите'+Html.RegExp('укажите(.*?)картинки живой природы',1)+'картинки живой природы')</imagedescription>
 		<clickimage>1</clickimage>
 		<clickimagewidth>70</clickimagewidth>
@@ -47,7 +47,7 @@
 							end;
 						)
 		</proccessimage>
-		<posturl>http://smsgate.kyivstar.ua/sms/?lang=ru</posturl>
+		<posturl>http://smsgate.kyivstar.ua/kh/sms/?lang=ru</posturl>
 		<postdata>eval(
 						var
 							i: integer;
@@ -75,7 +75,7 @@
 		</success>
 		<error>eval(Html.RegExp('&lt;p class=&quot;comment&quot;&gt;(.*?)&lt;/p&gt;',1))</error>
 		<cd_method>GET</cd_method>
-		<cd_url>http://smsgate.kyivstar.ua/sms/?request_status=true&amp;lang=ru</cd_url>
+		<cd_url>http://smsgate.kyivstar.ua/kh/sms/?request_status=true&amp;lang=ru</cd_url>
 		<cd_success>eval(
 						begin
 							if HTML.ExistsStr('Сообщение отправлено') then
